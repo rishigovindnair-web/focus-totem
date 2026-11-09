@@ -1,0 +1,31 @@
+category,ref,item,qty,est_unit_usd,est_total_usd,key_specs,buy_link,reference_link,notes
+Electronics,U1,ESP32-C3 SuperMini,1,2.50,2.50,"22.5 x 18 mm, USB-C, onboard 3.3V LDO",https://www.aliexpress.com/w/wholesale-esp32-c3-supermini.html,https://protosupplies.com/product/esp32c3-supermini/,Brain. LiPo feeds the 5V pin through SW1. Flash before closing the case; later updates over Wi-Fi (OTA).
+Electronics,U2,GY-521 MPU-6050 accelerometer/gyro module,1,1.50,1.50,"21 x 16 mm, I2C, 3.3-5V",https://www.aliexpress.com/w/wholesale-gy-521-mpu6050.html,https://pro.maplin.co.uk/products/gy-521-mpu-6050-3-axis-gyroscope-accelerometer-gyro-module,Detects which face is down. Accelerometer only.
+Electronics,D1,WS2812B 12-LED ring,1,1.80,1.80,"37 mm OD, 23 mm ID, 5V addressable",https://www.aliexpress.com/w/wholesale-ws2812b-12-bit-ring-37mm.html,https://az-delivery.de/en/products/led-ring-5v-rgb-ws2812b-12-bit-37mm-fur-arduino,Must be the 37 mm version (the 50 mm one won't fit the lid pocket).
+Electronics,U3,TP4056 USB-C charger with protection (DW01),1,0.60,0.60,"~26 x 17 mm, 6 pads: IN+/IN-/B+/B-/OUT+/OUT-",https://www.aliexpress.com/w/wholesale-tp4056-type-c-protection.html,https://www.az-delivery.de/en/products/tp4056-with-protection-type-c,Optional: swap R-prog for ~2.4k to charge at ~500 mA (safer for a 500 mAh cell).
+Electronics,BT1,503035 LiPo 3.7V 500mAh,1,3.00,3.00,"5 x 30 x 35 mm, 2-wire",https://www.aliexpress.com/w/wholesale-503035-lipo-500mah.html,https://ampul.eu/en/battery/4154-li-pol-battery-500mah-37v-503035,Get one with a protection board on the tabs if possible.
+Electronics,SW1,SS12D00G3 mini slide switch,1,0.15,0.15,"8.6 x 3.6 mm body, 2.54 mm pitch",https://www.aliexpress.com/w/wholesale-ss12d00g3.html,,Hard power-off between OUT+ and ESP32 5V. Usually sold in packs of 10-20.
+Electronics,BZ1,Passive buzzer 12 x 9.5 mm,1,0.25,0.25,"3.3-5V, passive (needs PWM)",https://www.aliexpress.com/w/wholesale-passive-buzzer-12095.html,,End-of-session chime. Sits behind the +X sound holes.
+Electronics,Q1,S8050 NPN transistor (TO-92),1,0.05,0.05,,https://www.aliexpress.com/w/wholesale-s8050-to92.html,,Low-side switch for the buzzer.
+Electronics,D2,1N4148 diode,1,0.02,0.02,DO-35,https://www.aliexpress.com/w/wholesale-1n4148.html,,Flyback across the buzzer coil.
+Electronics,R1,1k resistor,1,0.02,0.02,1/4W,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,,Q1 base resistor.
+Electronics,R2,330 ohm resistor,1,0.02,0.02,1/4W,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,,In series with ring DIN.
+Electronics,R3/R4,100k resistor,2,0.02,0.04,1/4W,https://www.aliexpress.com/w/wholesale-resistor-kit-1-4w.html,,Battery voltage divider into an ADC pin for a low-battery warning.
+Electronics,C1,470uF 6.3V electrolytic,1,0.10,0.10,6.3 x 7 mm,https://www.aliexpress.com/w/wholesale-470uf-6.3v-capacitor.html,,Across ring power.
+Electronics,C2,100nF ceramic capacitor,1,0.02,0.02,,https://www.aliexpress.com/w/wholesale-100nf-ceramic-capacitor.html,,Smooths the battery-sense divider.
+Wiring,W1,30AWG silicone wire assortment,1,1.50,1.50,~1 m used,https://www.aliexpress.com/w/wholesale-30awg-silicone-wire.html,,Point-to-point wiring between floor and sled.
+Wiring,W2,JST-PH 2.0 2-pin connector pair,1,0.10,0.10,,https://www.aliexpress.com/w/wholesale-jst-ph-2.0-2pin.html,,Lets you unplug the battery during assembly. Check polarity before plugging in.
+Wiring,W3,Heat-shrink tubing assortment,1,0.50,0.50,1.5-3 mm,https://www.aliexpress.com/w/wholesale-heat-shrink-tubing-kit.html,,Cover every bare joint near the battery.
+Assembly,M1,Kapton tape,1,0.50,0.50,10 mm wide,https://www.aliexpress.com/w/wholesale-kapton-tape-10mm.html,,Insulate battery tabs and the underside of the sled.
+Assembly,M2,Double-sided foam tape,1,0.30,0.30,1 mm thick,https://www.aliexpress.com/w/wholesale-double-sided-foam-tape-1mm.html,,Holds the battery to the floor and the modules in their sled pockets.
+Assembly,M3,Hot glue,1,0.00,0.00,,,,"Switch, buzzer, LED ring in lid pocket. Assumed already owned."
+Assembly,M4,M2 x 6 self-tapping screws (backup),4,0.03,0.12,,https://www.aliexpress.com/w/wholesale-m2x6-self-tapping-screw.html,,Only if the snap-fit lid doesn't hold when the cube is face-down.
+Printing,P1,PLA for body + sled,1,0.80,0.80,~30 g,,,Any color. Body prints open side up; sled flat.
+Printing,P2,White or translucent PLA/PETG for lid,1,0.20,0.20,~8 g,,,The lid is the diffuser. Print top face down.
+Tools,T1,Soldering iron + solder + flux,1,0.00,0.00,,,,Assumed already owned.
+Tools,T2,Multimeter,1,0.00,0.00,,,,Assumed already owned. Use it to check battery polarity and calibrate the ADC.
+Tools,T3,Wire strippers / flush cutters,1,0.00,0.00,,,,Assumed already owned.
+,,,,,,,,,
+,,SUBTOTAL (parts),,,14.09,,,,
+,,Shipping (estimate),,,3.00,,,,AliExpress Choice often ships free over ~$10. Budget a few dollars in case not.
+,,TOTAL (estimate),,,17.09,,,,Under the $20 target. Prices are typical listing prices; check before ordering.
