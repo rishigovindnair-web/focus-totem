@@ -1,25 +1,15 @@
-category,ref,item,qty_needed,pack_bought,price_usd,buy_link,variant_to_select,notes
-Electronics,U1,ESP32-C3 SuperMini,1,1,3.36,https://www.aliexpress.us/item/3256810126572293.html,1PCS,Choice. Flash before closing the case; later updates over Wi-Fi (OTA).
-Electronics,U2,GY-521 MPU-6050 module,1,1,3.33,https://www.aliexpress.us/item/3256808610385993.html,MPU-6050 / 1pcs,Choice. Pins come loose (not soldered) so it sits flat on the sled.
-Electronics,D1,WS2812 12-LED ring,1,1,1.56,https://www.aliexpress.us/item/3256806637140644.html,12 Bit WS2812,Choice. Listing has no diameter. Photo matches the 37 mm style but CONFIRM 37 mm OD before ordering - a 50 mm ring will not fit the lid.
-Electronics,U3,TP4056 USB-C charger with protection,1,2,1.78,https://www.aliexpress.us/item/3256812791605045.html,2PCS / 18650 Type-c,Choice. Protected version (has OUT+/OUT- pads).
-Electronics,BT1,503035 LiPo 3.7V 500mAh,1,1,1.09,https://www.aliexpress.us/item/3256809549753946.html,1pcs,Global seller with free shipping. $1.09 is a one-item returning-shopper deal; regular cart price was $7.45.
-Electronics,SW1,SS12D00G3 mini slide switch,1,10,1.72,https://www.aliexpress.us/item/3256806995555447.html,A,Choice.
-Electronics,BZ1,12095 5V active buzzer,1,10,2.55,https://www.aliexpress.us/item/3256805970769974.html,12095 5V,Choice. Changed from passive to ACTIVE: beeps on its own when powered so the firmware just switches it on/off. No flyback diode needed.
-Electronics,Q1,SS8050 NPN transistor (TO-92),1,50,1.79,https://www.aliexpress.us/item/3256806624734473.html,SS8050,Choice. S8050 variant was sold out; SS8050 is a drop-in replacement with higher current rating.
-Electronics,R1-R4,1/4W metal film resistor kit (has 330R / 1k / 100k),4,300,2.79,https://www.aliexpress.us/item/3256806677587450.html,300PCS with box,Choice. Use 330R (ring DIN) 1k (Q1 base) 2x 100k (battery divider).
-Electronics,C1,330uF 10V electrolytic capacitor,1,20,2.16,https://www.aliexpress.us/item/3256802356540498.html,10V 330uF 20PCS,Choice. 470uF was sold out; 330uF is plenty for 12 LEDs.
-Electronics,C2,100nF ceramic capacitor,1,,0.00,,,Not added - a 100nF pack was already in your cart. Any 100nF works.
-Wiring,W1,30AWG silicone wire,~1 m,,0.00,,,Not added - assumed you have hookup wire.
-Wiring,W3,Heat-shrink tubing,,,0.00,,,Not added - assumed owned. Cover every joint near the battery.
-Assembly,M1,Kapton tape,,,0.00,,,Not added - assumed owned. Insulate battery tabs.
-Assembly,M2,Double-sided foam tape,,,0.00,,,Not added - assumed owned.
-Assembly,M3,Hot glue,,,0.00,,,Assumed owned.
-Assembly,M4,M2 x 6 self-tapping screws,4,,0.00,,,Only if the snap-fit lid doesn't hold. Not added.
-Printing,P1,PLA for body + sled,~30 g,,0.00,,,Print on your own printer.
-Printing,P2,White or translucent PLA/PETG for lid,~8 g,,0.00,,,The lid is the diffuser.
-Tools,T1-T3,Soldering iron / multimeter / wire strippers,,,0.00,,,Assumed owned.
-,,,,,,,,
-,,SUBTOTAL (cart prices 8 Nov 2026),,,22.13,,,"$28.49 if the one-item battery deal doesn't apply at checkout."
-,,Shipping,,,TBD,,,"9 of 10 items are Choice (Shipped by AliExpress); the battery seller lists free shipping."
-,,TOTAL,,,TBD,,,
+ref,item,qty,unit_price_usd,vendor,buy_link,variant_to_select,pack_size,qty_used,notes
+U1,ESP32-C3 SuperMini,1,3.36,AliExpress,https://www.aliexpress.us/item/3256810126572293.html,1PCS,1,1,Choice. Flash before closing the case; later updates over Wi-Fi (OTA).
+U2,GY-521 MPU-6050 module,1,3.33,AliExpress,https://www.aliexpress.us/item/3256808610385993.html,MPU-6050 / 1pcs,1,1,Choice. Pins come loose (not soldered) so it sits flat on the sled.
+D1,WS2812 12-LED ring,1,1.56,AliExpress,https://www.aliexpress.us/item/3256806637140644.html,12 Bit WS2812,1,1,Choice. Listing has no diameter. Photo matches the 37 mm style but CONFIRM 37 mm OD before ordering - a 50 mm ring will not fit the lid.
+U3,TP4056 USB-C charger with protection,1,1.78,AliExpress,https://www.aliexpress.us/item/3256812791605045.html,2PCS / 18650 Type-c,2,1,Choice. Protected version (has OUT+/OUT- pads).
+BT1,503035 LiPo 3.7V 500mAh,1,1.09,AliExpress,https://www.aliexpress.us/item/3256809549753946.html,1pcs,1,1,Global seller with free shipping. $1.09 is a one-item returning-shopper deal; regular cart price was $7.45.
+SW1,SS12D00G3 mini slide switch,1,1.72,AliExpress,https://www.aliexpress.us/item/3256806995555447.html,A,10,1,Choice.
+BZ1,12095 5V active buzzer,1,2.55,AliExpress,https://www.aliexpress.us/item/3256805970769974.html,12095 5V,10,1,Choice. Changed from passive to ACTIVE: beeps on its own when powered so the firmware just switches it on/off. No flyback diode needed.
+Q1,SS8050 NPN transistor (TO-92),1,1.79,AliExpress,https://www.aliexpress.us/item/3256806624734473.html,SS8050,50,1,Choice. S8050 variant was sold out; SS8050 is a drop-in replacement with higher current rating.
+R1-R4,1/4W metal film resistor kit (has 330R / 1k / 100k),1,2.79,AliExpress,https://www.aliexpress.us/item/3256806677587450.html,300PCS with box,300,4,Choice. Use 330R (ring DIN) 1k (Q1 base) 2x 100k (battery divider).
+C1,330uF 10V electrolytic capacitor,1,2.16,AliExpress,https://www.aliexpress.us/item/3256802356540498.html,10V 330uF 20PCS,20,1,Choice. 470uF was sold out; 330uF is plenty for 12 LEDs.
+
+,SUBTOTAL,,22.13,,,,,,$28.49 if the one-item battery deal does not apply at checkout.
+,Shipping,,TBD,,,,,,
+,TOTAL,,TBD,,,,,,Not bought (assumed already owned): 100nF ceramic capacitor; 30AWG silicone wire; Heat-shrink tubing; Kapton tape; Double-sided foam tape; Hot glue; M2 x 6 self-tapping screws; PLA for body + sled; White or translucent PLA/PETG for lid; Soldering iron / multimeter / wire strippers.
