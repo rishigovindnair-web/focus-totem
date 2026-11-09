@@ -29,9 +29,23 @@ The cube uses an MPU-6050 accelerometer to determine which side is down. An ESP3
 | U3 | TP4056 USB-C charger with protection |
 | BT1 | 503035 LiPo 500 mAh |
 | SW1 | SS12D00G3 slide switch |
-| BZ1 | 12 mm passive buzzer (S8050 driver) |
+| BZ1 | 12095 5 V active buzzer (SS8050 driver) |
 
-This totals around $14 (around $17 with postage). The full BOM is in [bom.csv](bom.csv).
+These parts come to about $22 on AliExpress (cart prices in November 2026, before shipping). The full BOM with links is in [bom.csv](bom.csv).
+
+## Not in the BOM
+
+The BOM only lists what needs to be bought. It assumes you already have:
+
+- 30 AWG silicone hookup wire (about 1 m)
+- Heat-shrink tubing for every joint near the battery
+- Kapton tape to insulate the battery tabs
+- Double-sided foam tape to hold the battery and modules in place
+- Hot glue for the switch, buzzer and LED ring
+- A 100 nF ceramic capacitor for the battery-sense divider
+- PLA for the body and sled (about 30 g), and white or translucent PLA/PETG for the lid (about 8 g)
+- A soldering iron, solder, a multimeter and wire strippers
+- 4x M2x6 self-tapping screws, only if the snap-fit lid doesn't hold
 
 ## Connections
 
@@ -39,10 +53,10 @@ This totals around $14 (around $17 with postage). The full BOM is in [bom.csv](b
 | --- | --- |
 | LED ring DIN (via 330 Ω resistor) | GPIO10 |
 | MPU-6050 SDA / SCL | GPIO6 / GPIO7 |
-| Buzzer (S8050 base via 1 kΩ resistor) | GPIO5 |
+| Buzzer (SS8050 base via 1 kΩ resistor) | GPIO5 |
 | Battery sense (100 kΩ / 100 kΩ divider) | GPIO3 |
 
-Connect the LiPo to the TP4056 B+/B-. Connect OUT+ to SW1, then SW1 to the ESP32 5V pin. OUT- goes to GND. The LED ring is connected to the same switched rail, with a 470 µF capacitor across the ring's power pins.
+Connect the LiPo to the TP4056 B+/B-. Connect OUT+ to SW1, then SW1 to the ESP32 5V pin. OUT- goes to GND. The LED ring is connected to the same switched rail, with a 330 µF capacitor across the ring's power pins.
 
 ## CAD
 
